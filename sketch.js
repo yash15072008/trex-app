@@ -81,7 +81,7 @@ function draw(){
      if (ground.x<0) {
     ground.x = ground.width/2;
   }
-     if ((touches.lenght > 0 || keyDown("space")) && trex.y>height-80) {
+     if ((touches.length > 0 || keyDown("space")) && trex.y>height-80) {
     trex.velocityY = -10;
     jump.play();
     touches=[];
@@ -110,7 +110,7 @@ function draw(){
     gameover.visible=true;
     restart.visible=true;
     trex.velocityY=0;
-    if (touches.lenght > 0 || mousePressedOver(restart)) {
+    if (touches.length > 0 || mousePressedOver(restart)) {
       
       reset();
       touches=[];
